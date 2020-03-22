@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String test = "123";
-
         Spinner spinner =  findViewById(R.id.spinner);
         final String[] lunch = {"輔仁大學", "台灣大學", "師範大學", "屏東大學", "好棒棒球隊"};
         ArrayAdapter<String> lunchList = new ArrayAdapter<>(MainActivity.this,
