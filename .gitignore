@@ -1,0 +1,6 @@
+IBA max.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/build.gradle

@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        String test = "123";
+
+        Spinner spinner =  findViewById(R.id.spinner);
         final String[] lunch = {"輔仁大學", "台灣大學", "師範大學", "屏東大學", "好棒棒球隊"};
         ArrayAdapter<String> lunchList = new ArrayAdapter<>(MainActivity.this,
                 android.R.layout.simple_spinner_dropdown_item,
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(lunchList);
 
 //換頁
-        Button nextPageBtn = (Button) findViewById(R.id.button);
+        Button nextPageBtn =  findViewById(R.id.button);
         nextPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,14 +39,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button nextPage = (Button) findViewById(R.id.button);
-        nextPageBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, page2.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
