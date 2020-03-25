@@ -13,7 +13,7 @@
             android:name=".page2"
             android:label="球隊管理"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".main_player"
             android:label="球隊分析">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
